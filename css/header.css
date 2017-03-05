@@ -1,0 +1,53 @@
+header {
+    background: url("../img/header_bg.png") no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.headerSection {
+    font-size: 5pt;
+}
+
+nav > div {
+    position: relative;
+    top: 40%;
+}
+
+nav {
+    background-color: #ffffff;
+    opacity: 0.85;
+    height: 100px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+nav.smaller {
+    height: 30px;
+}
+nav.smaller > div { top: 30%;}
+
+nav a {
+    text-decoration: none;
+    vertical-align: middle;
+    color: #020202;
+    margin: auto 15px;
+
+    opacity: 1.0;
+}
+
+nav a:hover {
+    color: #e6bd55;
+    transition-delay: 0.1s;
+}
+
+#intro_description {
+    position: relative;
+    left: 50%;
+    top: 70%;
+    width: 40%;
+    font-size: large;
+}

@@ -1,775 +1,148 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
 
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>-->
 
-<script type="text/javascript" src="/static/js/analytics.js"></script>
-<script type="text/javascript">archive_analytics.values.server_name="wwwb-app14.us.archive.org";archive_analytics.values.server_ms=2109;</script>
-<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+    <script type="text/javascript" src="js/headerScroll.js"></script>
 
-
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=10" />
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="pingback" href="http://mateuszsurma.pl/xmlrpc.php" />
-	<title>Mateusz Surma, 1 dan zawodowy w Go &#8211; Strona internetowa o Go</title>
-<link rel="alternate" type="application/rss+xml" title="Mateusz Surma, 1 dan zawodowy w Go &raquo; Kanał z wpisami" href="http://mateuszsurma.pl/pl/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Mateusz Surma, 1 dan zawodowy w Go &raquo; Kanał z komentarzami" href="http://mateuszsurma.pl/pl/comments/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"/web/20160729170050/https://s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"/web/20160729170050/http://mateuszsurma.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
-			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='sow-button-base-css'  href='/web/20160729170050cs_/http://mateuszsurma.pl/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.6.4' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-button-atom-2ccd48e1563f-css'  href='/web/20160729170050cs_/http://mateuszsurma.pl/wp-content/uploads/siteorigin-widgets/sow-button-atom-2ccd48e1563f.css?ver=4.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='vantage-style-css'  href='/web/20160729170050cs_/http://mateuszsurma.pl/wp-content/themes/vantage/style.css?ver=1.5' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='/web/20160729170050cs_/http://mateuszsurma.pl/wp-content/themes/vantage/fontawesome/css/font-awesome.css?ver=4.6.2' type='text/css' media='all' />
-<script type='text/javascript' src='/web/20160729170050js_/http://mateuszsurma.pl/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='/web/20160729170050js_/http://mateuszsurma.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='/web/20160729170050js_/http://mateuszsurma.pl/wp-content/themes/vantage/js/jquery.flexslider.min.js?ver=2.1'></script>
-<script type='text/javascript' src='/web/20160729170050js_/http://mateuszsurma.pl/wp-content/themes/vantage/js/jquery.touchSwipe.min.js?ver=1.6.6'></script>
-<script type='text/javascript' src='/web/20160729170050js_/http://mateuszsurma.pl/wp-content/themes/vantage/js/jquery.theme-main.min.js?ver=1.5'></script>
-<script type='text/javascript' src='/web/20160729170050js_/http://mateuszsurma.pl/wp-content/themes/vantage/js/jquery.fitvids.min.js?ver=1.0'></script>
-<link rel='https://api.w.org/' href='http://mateuszsurma.pl/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mateuszsurma.pl/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://mateuszsurma.pl/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.5.3" />
-
-<link rel="stylesheet" href="/web/20160729170050cs_/http://mateuszsurma.pl/wp-content/plugins/count-per-day/counter.css" type="text/css" />
-		<link rel="stylesheet" media="all" type="text/css" href="/web/20160729170050cs_/http://mateuszsurma.pl/wp-content/plugins/eidogo-for-wordpress/eidogo/player/css/player.css" />
-		<link rel="stylesheet" media="all" type="text/css" href="/web/20160729170050cs_/http://mateuszsurma.pl/wp-content/plugins/eidogo-for-wordpress/wp-eidogo.css" />
-		
-		<script type="text/javascript"><!--
-			var broken_browser = false;
-		--></script>
-		<!--[if lt IE 7]>
-		<script type="text/javascript">
-			broken_browser = "<p class=\"ie6warning\">Internet Explorer 6 is not currently supported by the EidoGo for\n\t\t\tWordPress plugin. Consider downloading one of the following:<br \/>\n\t\t\t<a href=\"/web/20160729170050/http://www.microsoft.com\/windows\/internet-explorer\/default.aspx\">Internet Explorer 8<\/a><br \/>\n\t\t\t<a href=\"/web/20160729170050/http://www.getfirefox.com\/\">Mozilla Firefox<\/a><br \/>\n\t\t\t<a href=\"/web/20160729170050/http://www.google.com\/chrome\">Google Chrome<\/a><br \/>\n\t\t\t<a href=\"/web/20160729170050/http://www.opera.com\/\">Opera<\/a>\n\t\t\t<\/p>";
-		</script>
-		<![endif]-->
-		<script type="text/javascript" src="/web/20160729170050js_/http://mateuszsurma.pl/wp-content/plugins/eidogo-for-wordpress/eidogo/player/js/all.compressed.js"></script><link rel="alternate" href="http://mateuszsurma.pl/pl/" hreflang="pl" />
-<link rel="alternate" href="http://mateuszsurma.pl/en/" hreflang="en" />
-<link rel="alternate" href="http://mateuszsurma.pl/" hreflang="x-default" />
-	<!--[if lt IE 9]>
-		<script src="/web/20160729170050/http://mateuszsurma.pl/wp-content/themes/vantage/js/html5.js" type="text/javascript"></script>
-	<![endif]-->
-	<!--[if (gte IE 6)&(lte IE 8)]>
-		<script type="text/javascript" src="/web/20160729170050/http://mateuszsurma.pl/wp-content/themes/vantage/js/selectivizr.js"></script>
-	<![endif]-->
-	<meta name="viewport" content="width=device-width, initial-scale=1" />		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-			<style type="text/css" media="screen">
-		#footer-widgets .widget { width: 100%; }
-		@media screen and (max-width: 640px) {
-			#footer-widgets .widget { width: auto; float: none; }
-		}
-	</style>
-	<style type="text/css" id="customizer-css">#masthead .hgroup h1, #masthead.masthead-logo-in-menu .logo > h1 { font-size: px } </style><link rel="icon" href="http://mateuszsurma.pl/wp-content/uploads/2016/01/cropped-Mateusz-32x32.jpg" sizes="32x32" />
-<link rel="icon" href="http://mateuszsurma.pl/wp-content/uploads/2016/01/cropped-Mateusz-192x192.jpg" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="http://mateuszsurma.pl/wp-content/uploads/2016/01/cropped-Mateusz-180x180.jpg" />
-<meta name="msapplication-TileImage" content="http://mateuszsurma.pl/wp-content/uploads/2016/01/cropped-Mateusz-270x270.jpg" />
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/about%20articles.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Zadanie 30</title>
 </head>
-
-<body class="home blog responsive layout-boxed no-js has-sidebar has-menu-search panels-style-force-full page-layout-default">
-
-
-<!-- BEGIN WAYBACK TOOLBAR INSERT -->
-<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
-<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
-<script type="text/javascript">//<![CDATA[
-var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
-var wbPrefix = "/web/";
-var wbCurrentUrl = "http://mateuszsurma.pl/pl/";
-
-var firstYear = 1996;
-var displayDay = "29";
-var displayMonth = "Jul";
-var displayYear = "2016";
-var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-var $D=document,$=function(n){return document.getElementById(n)};
-var trackerVal,curYear = -1,curMonth = -1;
-var yearTracker,monthTracker;
-function showTrackers(val) {
-  if (val===trackerVal) return;
-  var $ipp=$("wm-ipp");
-  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
-  if (val) {
-    $ipp.className="hi";
-  } else {
-    $ipp.className="";
-    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
-  }
-  yearTracker.style.display=val?"inline":"none";
-  monthTracker.style.display=val?"inline":"none";
-  trackerVal = val;
-}
-function trackMouseMove(event,element) {
-  var eventX = getEventX(event);
-  var elementX = getElementX(element);
-  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
-  var monthOff = xOff % yearImgWidth;
-
-  var year = Math.floor(xOff / yearImgWidth);
-  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
-  // 1 extra border pixel at the left edge of the year:
-  var month = (year * 12) + monthOfYear;
-  var day = monthOff % 2==1?15:1;
-  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
-    zeroPad(day,2) + "000000";
-
-  $("displayYearEl").innerHTML=year+firstYear;
-  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
-  // looks too jarring when it changes..
-  //$("displayDayEl").innerHTML=zeroPad(day,2);
-  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
-  $("wm-graph-anchor").href=url;
-
-  if(curYear != year) {
-    var yrOff = year * yearImgWidth;
-    yearTracker.style.left = yrOff + "px";
-    curYear = year;
-  }
-  if(curMonth != month) {
-    var mtOff = year + (month * monthImgWidth) + 1;
-    monthTracker.style.left = mtOff + "px";
-    curMonth = month;
-  }
-}
-function hideToolbar() {
-  $("wm-ipp").style.display="none";
-}
-function bootstrap() {
-  var $spk=$("wm-ipp-sparkline");
-  yearTracker=$D.createElement('div');
-  yearTracker.className='yt';
-  with(yearTracker.style){
-    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
-  }
-  monthTracker=$D.createElement('div');
-  monthTracker.className='mt';
-  with(monthTracker.style){
-    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
-  }
-  $spk.appendChild(yearTracker);
-  $spk.appendChild(monthTracker);
-
-  var $ipp=$("wm-ipp");
-  $ipp&&disclaimElement($ipp);
-}
-return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
-})(550, 27, 25, 2);//]]>
-</script>
-<style type="text/css">
-body {
-  margin-top:0 !important;
-  padding-top:0 !important;
-  min-width:800px !important;
-}
-</style>
-<div id="wm-ipp" lang="en" style="display:none;">
-
-<div style="position:fixed;left:0;top:0;width:100%!important">
-<div id="wm-ipp-inside">
-   <table style="width:100%;"><tbody><tr>
-   <td id="wm-logo">
-       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
-   </td>
-   <td class="c">
-       <table style="margin:0 auto;"><tbody><tr>
-       <td class="u" colspan="2">
-       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://mateuszsurma.pl/pl/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160729170050" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
-       </td>
-       <td class="n" rowspan="2">
-           <table><tbody>
-           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
-           <tr class="m">
-           	<td class="b" nowrap="nowrap">
-		
-		    <a href="/web/20160423181437/http://mateuszsurma.pl/pl/" title="23 Apr 2016">APR</a>
-		
-		</td>
-		<td class="c" id="displayMonthEl" title="You are here: 17:00:50 Jul 29, 2016">JUL</td>
-		<td class="f" nowrap="nowrap">
-		
-		    Aug
-		
-                </td>
-	    </tr>
-           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
-           <tr class="d">
-               <td class="b" nowrap="nowrap">
-               
-                   <a href="/web/20160707035804/http://mateuszsurma.pl/pl/" title="3:58:04 Jul 7, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
-               
-               </td>
-               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 17:00:50 Jul 29, 2016">29</td>
-	       <td class="f" nowrap="nowrap">
-               
-                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
-               
-	       </td>
-           </tr>
-           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
-           <tr class="y">
-	       <td class="b" nowrap="nowrap">
-               
-                   2015
-               
-               </td>
-               <td class="c" id="displayYearEl" title="You are here: 17:00:50 Jul 29, 2016">2016</td>
-	       <td class="f" nowrap="nowrap">
-               
-                   2017
-               
-	       </td>
-           </tr>
-           </tbody></table>
-       </td>
-       </tr>
-       <tr>
-       <td class="s">
-           <a class="t" href="/web/20160729170050*/http://mateuszsurma.pl/pl/" title="See a list of every capture for this URL">6 captures</a>
-           <div class="r" title="Timespan for captures of this URL">26 Mar 16 - 29 Jul 16</div>
-       </td>
-       <td class="k">
-       <a href="" id="wm-graph-anchor">
-       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
-	 <img id="sparklineImgId" alt="sparklines"
-		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
-		 onmousemove="__wm.mv(event,this)"
-		 width="550"
-		 height="27"
-		 border="0"
-		 src="/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000000_2015:-1:000000000000_2016:6:001300200000_2017:-1:000000000000" />
-       </div>
-       </a>
-       </td>
-       </tr></tbody></table>
-   </td>
-   <td class="r">
-       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
-       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
-   </td>
-   </tr></tbody></table>
-</div>
-</div>
-</div>
-<script type="text/javascript">__wm.bt();</script>
-<!-- END WAYBACK TOOLBAR INSERT -->
-
-
-
-<div id="page-wrapper">
-
-	
-	
-		<header id="masthead" class="site-header" role="banner">
-
-	<div class="hgroup full-container">
-		<a href="/web/20160729170050/http://mateuszsurma.pl/pl/" title="Mateusz Surma, 1 dan zawodowy w Go" rel="home" class="logo"><h1 class="site-title">Mateusz Surma, 1 dan zawodowy w Go</h1></a>
-
-		
-			<div id="header-sidebar" >
-				<aside id="sow-button-3" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-atom-2ccd48e1563f"><div class="ow-button-base ow-button-align-center">
-
-		<a class="ow-button-hover" href="/web/20160729170050/http://mateuszsurma.pl/en/" >
-		<span>
-			
-			English		</span>
-	</a>
-</div>
-</div></aside><aside id="sow-button-4" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-atom-2ccd48e1563f"><div class="ow-button-base ow-button-align-center">
-
-		<a class="ow-button-hover" href="/web/20160729170050/http://mateuszsurma.pl/pl/" >
-		<span>
-			
-			Polski		</span>
-	</a>
-</div>
-</div></aside>			</div>
-
-		
-	</div><!-- .hgroup.full-container -->
-
-	
-<nav role="navigation" class="site-navigation main-navigation primary use-sticky-menu">
-
-	<div class="full-container">
-							<div id="search-icon">
-				<div id="search-icon-icon"><div class="vantage-icon-search"></div></div>
-				
-<form method="get" class="searchform" action="/web/20160729170050/http://mateuszsurma.pl/pl/" role="search">
-	<input type="text" class="field" name="s" value="" placeholder="Search"/>
-</form>
-			</div>
-		
-					<div class="menu"><ul><li class="current_page_item"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/"><span class="icon"></span>Strona główna</a></li><li class="page_item page-item-21"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/czym-jest-go/"><span class="icon"></span>Czym jest Go?</a></li><li class="page_item page-item-10"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/welcome/"><span class="icon"></span>Kontakt</a></li><li class="page_item page-item-101"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/lekcje/"><span class="icon"></span>Lekcje</a></li><li class="page_item page-item-78"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/moje-ksiazki/"><span class="icon"></span>Moje książki</a></li><li class="page_item page-item-2"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/o-mnie/"><span class="icon"></span>O mnie</a></li><li class="page_item page-item-19"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/dla-sponsorow/"><span class="icon"></span>Zostań sponsorem</a></li></ul></div>
-			</div>
-</nav><!-- .site-navigation .main-navigation -->
-
-</header><!-- #masthead .site-header -->
-	
-	
-	<div id="main-slider" data-stretch="true"><!-- meta slider -->
-<div style="max-width: 400px;" class="metaslider metaslider-flex metaslider-43 ml-slider">
-    
-    <div id="metaslider_container_43">
-        <div id="metaslider_43">
-            <ul class="slides">
-                <li style="display: block; width: 100%;" class="slide-5 ms-image"><img src="cropped-Mateusz-400x350.jpg" height="350" width="400" alt="" class="slider-43 slide-5" /></li>
-                <li style="display: none; width: 100%;" class="slide-84 ms-image"><img src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/01/Mati-400x350.jpg" height="350" width="400" alt="" class="slider-43 slide-84" /></li>
-                <li style="display: none; width: 100%;" class="slide-86 ms-image"><img src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/01/DSC00189-400x350.jpg" height="350" width="400" alt="" class="slider-43 slide-86" /></li>
-                <li style="display: none; width: 100%;" class="slide-87 ms-image"><img src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/01/msurma-400x350.png" height="350" width="400" alt="" class="slider-43 slide-87" /></li>
-                <li style="display: none; width: 100%;" class="slide-626 ms-image"><img src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/04/Bailing_Cup_2016-400x350.jpg" height="350" width="400" alt="" class="slider-43 slide-626" /></li>
-                <li style="display: none; width: 100%;" class="slide-630 ms-image"><img src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/04/Ing_Cup_2016-400x350.jpg" height="350" width="400" alt="" class="slider-43 slide-630" /></li>
+<body>
+<header>
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#portfolio" class="headerSection">PORTFOLIO</a></li>
+                <li><a href="#about" class="headerSection">ABOUT</a></li>
+                <li><a href="#about" class="theName">MOONSPEAK</a></li>
+                <li><a href="#articles" class="headerSection">ARTICLES</a></li>
+                <li><a href="#contact" class="headerSection">CONTACT</a></li>
             </ul>
         </div>
-        
+    </nav>
+    <div id="intro_description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed dom totam laudantium repudiandae quisquam sint
+        quos.
     </div>
-    <script type="text/javascript">
-        var metaslider_43 = function($) {
-            $('#metaslider_43').addClass('flexslider'); // theme/plugin conflict avoidance
-            $('#metaslider_43').flexslider({ 
-                slideshowSpeed:3000,
-                animation:"fade",
-                controlNav:true,
-                directionNav:true,
-                pauseOnHover:true,
-                direction:"horizontal",
-                reverse:false,
-                animationSpeed:600,
-                prevText:"&lt;",
-                nextText:"&gt;",
-                slideshow:true
-            });
-        };
-        var timer_metaslider_43 = function() {
-            var slider = !window.jQuery ? window.setTimeout(timer_metaslider_43, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_43, 1) : metaslider_43(window.jQuery);
-        };
-        timer_metaslider_43();
-    </script>
-</div>
-<!--// meta slider--></div>
-	
-	<div id="main" class="site-main">
-		<div class="full-container">
-			
-<div id="primary" class="content-area">
-
-	<div id="content" class="site-content" role="main">
-
-		
-		
-		
-<article id="post-859" class="post-859 post type-post status-publish format-standard hentry category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/23/droga-do-petersburga/" title="Permalink to Droga do Petersburga" rel="bookmark">Droga do Petersburga</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/23/droga-do-petersburga/" title="8:11 am" rel="bookmark"><time class="entry-date" datetime="2016-07-23T08:11:46+00:00">Lipiec 23, 2016</time></a><time class="updated" datetime="2016-07-23T08:42:25+00:00">Lipiec 23, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p><a href="/web/20160729170050/http://mateuszsurma.pl/?attachment_id=860#main"><img class="alignnone wp-image-860 size-medium" src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0032-300x225.jpg" alt="DSC_0032" width="300" height="225" srcset="http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0032-300x225.jpg 300w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0032-768x576.jpg 768w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0032-1024x768.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
-<p>Nie zesłali mnie na Syberię po wtypie w Korei, chociaż niektórzy by chyba woleli, żebym został w Irkutsku (tam zrobiłem to zdjęcie). To była długa droga z Seulu do Petersburga, z dwoma przesiadkami (w Irkutsku 15,5h czekania i w Moskwie 3h czekania), ale jakoś udało mi się dotrzeć na miejsce.</p>
-<p>Wczoraj po przylocie dojechałem do hotelu i poszedłem szukać kantora. Ponad 3h chodziłem po mieście i &#8230; nie znalazłem ani jednego. W końcu poszedłem do banku rozmienić kasę. Pytam się jakiegoś gościa, który tam pracował. &#8222;Dolar, rubel, exchange?&#8221;. On tylko <a class="more-link" href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/23/droga-do-petersburga/">Continue reading<span class="meta-nav">&rarr;</span></a></span
-></p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-859 -->
-
-	
-		
-<article id="post-831" class="post-831 post type-post status-publish format-standard hentry category-mecze category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/19/world-division-of-samsung-cup-2016-po-3-rundzie/" title="Permalink to World Division of Samsung Cup 2016, po 3 rundzie" rel="bookmark">World Division of Samsung Cup 2016, po 3 rundzie</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/19/world-division-of-samsung-cup-2016-po-3-rundzie/" title="1:12 pm" rel="bookmark"><time class="entry-date" datetime="2016-07-19T13:12:55+00:00">Lipiec 19, 2016</time></a><time class="updated" datetime="2016-07-19T13:34:15+00:00">Lipiec 19, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p>Przegrałem i odpadłem 🙁</p>
-<div class="eidogo-player-auto" sgf="http://mateuszsurma.pl/wp-content/uploads/2016/07/3rd-round-Pavol-Lisy-Mateusz-Surma-1.sgf" style="display: block;"></div>
-<p>Jutro finał: Pavol Lisy &#8211; Ali Jabarin</p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-831 -->
-
-	
-		
-<article id="post-824" class="post-824 post type-post status-publish format-standard hentry category-mecze category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/18/world-division-of-samsung-cup-2016-po-2-rundzie/" title="Permalink to World Division of Samsung Cup 2016, po 2 rundzie" rel="bookmark">World Division of Samsung Cup 2016, po 2 rundzie</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/18/world-division-of-samsung-cup-2016-po-2-rundzie/" title="1:12 pm" rel="bookmark"><time class="entry-date" datetime="2016-07-18T13:12:38+00:00">Lipiec 18, 2016</time></a><time class="updated" datetime="2016-07-19T13:40:54+00:00">Lipiec 19, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p>Czterech Europejczyków awansowało do półfinałów!<br />
-<a href="/web/20160729170050/http://mateuszsurma.pl/?attachment_id=825#main"><img class="alignnone wp-image-825 size-medium" src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0027-e1468847324920-225x300.jpg" alt="DSC_0027" width="225" height="300" srcset="http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0027-e1468847324920-225x300.jpg 225w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0027-e1468847324920-768x1024.jpg 768w" sizes="(max-width: 225px) 100vw, 225px" /></a><br />
-I poniżej mój mecz w sgf-ie:</p>
-<div class="eidogo-player-auto" sgf="http://mateuszsurma.pl/wp-content/uploads/2016/07/2nd-round-Guang-Chow-Mateusz-Surma.sgf" style="display: block;"></div>
-<p>Miejsce, w którym gramy mecze jest nawet na znakach drogowych:<br />
-<a href="/web/20160729170050/http://mateuszsurma.pl/?attachment_id=827#main"><img class="alignnone wp-image-827 size-medium" src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0026-300x225.jpg" alt="DSC_0026" width="300" height="225" srcset="http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0026-300x225.jpg 300w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0026-768x576.jpg 768w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0026-1024x768.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
-Jutro gram z Pavolem Lisym. Rywal, więc trzeba go ograć i tyle.</p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-824 -->
-
-	
-		
-<article id="post-814" class="post-814 post type-post status-publish format-standard hentry category-mecze category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/17/world-division-of-samsung-cup-2016-po-1-rundzie/" title="Permalink to World Division of Samsung Cup 2016, po 1 rundzie" rel="bookmark">World Division of Samsung Cup 2016, po 1 rundzie</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/17/world-division-of-samsung-cup-2016-po-1-rundzie/" title="12:19 pm" rel="bookmark"><time class="entry-date" datetime="2016-07-17T12:19:24+00:00">Lipiec 17, 2016</time></a><time class="updated" datetime="2016-07-19T13:46:35+00:00">Lipiec 19, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p>Pierwsza runda się skończyła. Oto wyniki:<br />
-<a href="/web/20160729170050/http://mateuszsurma.pl/?attachment_id=815#main"><img class="alignnone wp-image-815 size-medium" src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0024-225x300.jpg" alt="DSC_0024" width="225" height="300" srcset="http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0024-225x300.jpg 225w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0024-768x1024.jpg 768w" sizes="(max-width: 225px) 100vw, 225px" /></a><br />
-I zapis mojego meczu:</p>
-<div class="eidogo-player-auto" sgf="http://mateuszsurma.pl/wp-content/uploads/2016/07/1st-round-Khanh-Lam-Bui-Le-Mateusz-Surma.sgf" style="display: block;"></div>
-<p>A tak wygląda budynek, w którym gramy:<br />
-<a href="/web/20160729170050/http://mateuszsurma.pl/?attachment_id=817#main"><img class="alignnone wp-image-817 size-medium" src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0019-300x225.jpg" alt="DSC_0019" width="300" height="225" srcset="http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0019-300x225.jpg 300w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0019-768x576.jpg 768w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0019-1024x768.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a> <a href="/web/20160729170050/http://mateuszsurma.pl/?attachment_id=818#main"><img class="alignnone wp-image-818 size-medium" src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0022-300x225.jpg" alt="DSC_0022" width="300" height="225" srcset="http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0022-300x225.jpg 300w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0022-768x576.jpg 768w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0022-1024x768.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
-Wczoraj wieczorem zauważyłem coś niestandardowego w pokoju, w którym mieszkam. Na drzwiach jest przyklejona kartka z takim napisem:<br />
-<a href="/web/20160729170050/http://mateuszsurma.pl/?attachment_id=819#main"><img class="alignnone wp-image-819 size-medium" src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0018-300x225.jpg" alt="DSC_0018" width="300" height="225" srcset="http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0018-300x225.jpg 300w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0018.jpg 653w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
-A w pokoju znajduje się coś takiego:<br />
-<a href="/web/20160729170050/http://mateuszsurma.pl/?attachment_id=820#main"><img class="alignnone wp-image-820 size-medium" src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0017-300x225.jpg" alt="DSC_0017" width="300" height="225" srcset="http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0017-300x225.jpg 300w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0017-768x576.jpg 768w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0017-1024x768.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
-Dzisiaj udało mi się wygrać, więc gram dalej 🙂<br />
-Moim jutrzejszym przeciwnikiem będzie Guang Chow z RPA, obecnie najprawdopodobniej najsilniejszy gracz posiadający afrykański paszport. No, cóż &#8211; nie przyjechałem tu, żeby się bać przeciwników, a żeby ich ograć. I tego się będę trzymał.</p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-814 -->
-
-	
-		
-<article id="post-804" class="post-804 post type-post status-publish format-standard hentry category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/16/world-division-of-samsung-cup-2016-przed-1-runda/" title="Permalink to World Division of Samsung Cup 2016, przed 1 rundą" rel="bookmark">World Division of Samsung Cup 2016, przed 1 rundą</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/16/world-division-of-samsung-cup-2016-przed-1-runda/" title="11:42 am" rel="bookmark"><time class="entry-date" datetime="2016-07-16T11:42:45+00:00">Lipiec 16, 2016</time></a><time class="updated" datetime="2016-07-16T11:55:17+00:00">Lipiec 16, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p>Cześć! Jestem już w Seulu. Po Turnieju Warszawskim (wyniki są <a href="/web/20160729170050/http://www.europeangodatabase.eu/EGD/Tournament_Card.php?&amp;key=T160702I&amp;pin=14713413">tu</a>) wyjechałem nad morze na 10 dni na wakacje. Dzisiaj przyjechałem do Korei. Na ten wyjazd mam nową, większą walizkę. Mam zamiar powygrywać, a trzeba będzie jakoś przewozić te puchary 🙂<br />
-Byłem dzisiaj w Hankuk Kiwon (tam, gdzie odbywa się turniej). Jest już rozpisana drabinka:<br />
-<a href="/web/20160729170050/http://mateuszsurma.pl/?attachment_id=805#main"><img class="alignnone wp-image-805 size-medium" src="/web/20160729170050im_/http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0016-e1468669298112-225x300.jpg" alt="DSC_0016" width="225" height="300" srcset="http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0016-e1468669298112-225x300.jpg 225w, http://mateuszsurma.pl/wp-content/uploads/2016/07/DSC_0016-e1468669298112-768x1024.jpg 768w" sizes="(max-width: 225px) 100vw, 225px" /></a><br />
-Tylko jeden zawodnik przechodzi dalej, więc trzeba wszystko wygrać.<br />
-Każdego dnia mecze rozpoczynają się o 13:00 koreańskiego czasu.</p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-804 -->
-
-	
-		
-<article id="post-799" class="post-799 post type-post status-publish format-standard hentry category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/01/czas-ruszac-w-droge/" title="Permalink to Czas ruszać w drogę" rel="bookmark">Czas ruszać w drogę</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/01/czas-ruszac-w-droge/" title="9:16 am" rel="bookmark"><time class="entry-date" datetime="2016-07-01T09:16:16+00:00">Lipiec 1, 2016</time></a><time class="updated" datetime="2016-07-01T09:16:16+00:00">Lipiec 1, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p>Dzisiaj wyruszam z domu i będę &#8222;na walizkach&#8221; przez ponad 5 tygodni. Nie wiem jak będzie z dostępem do internetu. Nie wiem kiedy wrzucę kolejny post. Wszyscy chyba żyją jeszcze wczorajszym meczem Polski z Portugalią. Też się wkurzyłem. Nie będzie w tym roku zwycięstwa Polski na Mistrzostwach Europy w piłce nożnej. Ale będzie zwycięstwo Polski na Mistrzostwach Europy w GO!</p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-799 -->
-
-	
-		
-<article id="post-792" class="post-792 post type-post status-publish format-standard hentry category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/27/aktualizacja-zakladki/" title="Permalink to Aktualizacja zakładki" rel="bookmark">Aktualizacja zakładki</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/27/aktualizacja-zakladki/" title="3:15 pm" rel="bookmark"><time class="entry-date" datetime="2016-06-27T15:15:40+00:00">Czerwiec 27, 2016</time></a><time class="updated" datetime="2016-06-27T15:27:02+00:00">Czerwiec 27, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p>Zmodyfikowałem nieco zakładkę &#8222;<a href="/web/20160729170050/http://mateuszsurma.pl/pl/dla-sponsorow/">Zostań sponsorem</a>&#8222;. Niestety nie każdy sport jest w Polsce sportem. Gdyby tylko udało się utworzyć Polski Związek Sportowy Go, życie stałoby się znacznie prostsze.</p>
-<p>&#8222;Prawdziwy sportowiec nie lamentuje, prawdziwy sportowiec zamienia niedogodności w motywację&#8221;. Do tego hasła będę starał się stosować.</p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-792 -->
-
-	
-		
-<article id="post-777" class="post-777 post type-post status-publish format-standard hentry category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/24/smutne-wiadomosci/" title="Permalink to Smutne wiadomości" rel="bookmark">Smutne wiadomości</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/24/smutne-wiadomosci/" title="5:57 am" rel="bookmark"><time class="entry-date" datetime="2016-06-24T05:57:34+00:00">Czerwiec 24, 2016</time></a><time class="updated" datetime="2016-06-24T06:18:16+00:00">Czerwiec 24, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p>Szukałem wczoraj przelotów i przejazdów. Chyba wszystko mam już kupione. Niestety nie będę mógł <a class="more-link" href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/24/smutne-wiadomosci/">Continue reading<span class="meta-nav">&rarr;</span></a></span
-></p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-777 -->
-
-	
-		
-<article id="post-771" class="post-771 post type-post status-publish format-standard hentry category-mecze category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/23/wreszcie-w-domu/" title="Permalink to Wreszcie w domu" rel="bookmark">Wreszcie w domu</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/23/wreszcie-w-domu/" title="10:47 am" rel="bookmark"><time class="entry-date" datetime="2016-06-23T10:47:53+00:00">Czerwiec 23, 2016</time></a><time class="updated" datetime="2016-07-19T14:02:49+00:00">Lipiec 19, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p>Po dość długiej podróży (razem wyszło 37 godzin) udało mi się wreszcie wrócić do domu. Dzisiaj mam zamiar cały dzień nic nie robić. Ale i tak powinienem <a class="more-link" href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/23/wreszcie-w-domu/">Continue reading<span class="meta-nav">&rarr;</span></a></span
-></p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-771 -->
-
-	
-		
-<article id="post-762" class="post-762 post type-post status-publish format-standard hentry category-nowosci">
-
-	
-	<div class="entry-main">
-
-		
-		<header class="entry-header">
-			
-			<h1 class="entry-title"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/17/samsung-cup-2016-cd-liga-szkolna-15-17-06-2016/" title="Permalink to Samsung Cup 2016, cd. + liga szkolna 15-17.06.2016" rel="bookmark">Samsung Cup 2016, cd. + liga szkolna 15-17.06.2016</a></h1>
-
-							<div class="entry-meta">
-					Posted on <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/17/samsung-cup-2016-cd-liga-szkolna-15-17-06-2016/" title="1:30 pm" rel="bookmark"><time class="entry-date" datetime="2016-06-17T13:30:46+00:00">Czerwiec 17, 2016</time></a><time class="updated" datetime="2016-06-17T14:10:17+00:00">Czerwiec 17, 2016</time> <span class="byline"> by <span class="author vcard"><a class="url fn n" href="/web/20160729170050/http://mateuszsurma.pl/pl/author/drakula/" title="View all posts by drakula" rel="author">drakula</a></span></span> 				</div><!-- .entry-meta -->
-			
-		</header><!-- .entry-header -->
-
-					<div class="entry-content">
-				<p>JADĘ NA SAMSUNG CUP 🙂 Co prawda cudzym kosztem. Jeden z europejczyków, który był zgłoszony, nie dostał <a class="more-link" href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/17/samsung-cup-2016-cd-liga-szkolna-15-17-06-2016/">Continue reading<span class="meta-nav">&rarr;</span></a></span
-></p>
-							</div><!-- .entry-content -->
-		
-		
-	</div>
-
-</article><!-- #post-762 -->
-
-	
-		<nav role="navigation" id="nav-below" class="site-navigation paging-navigation">
-		<h1 class="assistive-text">Post navigation</h1>
-
-	
-		<div class='pagination'><span class='page-numbers current'>1</span>
-<a class='page-numbers' href='/web/20160729170050/http://mateuszsurma.pl/pl/page/2/'>2</a>
-<a class='page-numbers' href='/web/20160729170050/http://mateuszsurma.pl/pl/page/3/'>3</a>
-<a class='page-numbers' href='/web/20160729170050/http://mateuszsurma.pl/pl/page/4/'>4</a>
-<a class='page-numbers' href='/web/20160729170050/http://mateuszsurma.pl/pl/page/5/'>5</a>
-<a class='page-numbers' href='/web/20160729170050/http://mateuszsurma.pl/pl/page/6/'>6</a>
-<span class="page-numbers dots">&hellip;</span>
-<a class='page-numbers' href='/web/20160729170050/http://mateuszsurma.pl/pl/page/9/'>9</a>
-<a class="next page-numbers" href="/web/20160729170050/http://mateuszsurma.pl/pl/page/2/">Następne &raquo;</a></div>
-
-	
-	</nav><!-- #nav-below -->
-	
-
-	</div><!-- #content .site-content -->
-
-</div><!-- #primary .content-area -->
-
-
-<div id="secondary" class="widget-area" role="complementary">
-		<aside id="sow-editor-3" class="widget widget_sow-editor"><div class="so-widget-sow-editor so-widget-sow-editor-base"><h3 class="widget-title">Moje najbliższe turnieje</h3>
-<div class="siteorigin-widget-tinymce textwidget">
-	<p>22 lipca - 7 sierpnia, St.-Petersburg (Rosja), <a href="/web/20160729170050/http://egc2016.ru/">EGC</a><br />
-11-14 sierpnia, Warszawa (Polska), Mistrzostwa Polski<br />
-1-6 września, Urumqi (Chiny), <a href="/web/20160729170050/http://www.eurogofed.org/calendar/SilkRoad2016.pdf">Turniej Jedwabnego Szlaku</a></p>
-</div>
-</div></aside><aside id="sow-editor-4" class="widget widget_sow-editor"><div class="so-widget-sow-editor so-widget-sow-editor-base"><h3 class="widget-title">Najbliższe wykłady</h3>
-<div class="siteorigin-widget-tinymce textwidget">
-	<p>Na <a href="/web/20160729170050/https://www.gokgs.com/">KGS</a> (Kiseido Go Server) w pokoju LekcjePSG darmowe wykłady dla członków <a href="/web/20160729170050/http://psg.go.art.pl/">PSG</a> (Polskie Stowarzyszenie Go).<br />
-Jeszcze nie ma ustalonego terminu na kolejny wykład.</p>
-</div>
-</div></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Najnowsze wpisy</h3>		<ul>
-					<li>
-				<a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/23/droga-do-petersburga/">Droga do Petersburga</a>
-						</li>
-					<li>
-				<a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/19/world-division-of-samsung-cup-2016-po-3-rundzie/">World Division of Samsung Cup 2016, po 3 rundzie</a>
-						</li>
-					<li>
-				<a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/18/world-division-of-samsung-cup-2016-po-2-rundzie/">World Division of Samsung Cup 2016, po 2 rundzie</a>
-						</li>
-					<li>
-				<a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/17/world-division-of-samsung-cup-2016-po-1-rundzie/">World Division of Samsung Cup 2016, po 1 rundzie</a>
-						</li>
-					<li>
-				<a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/16/world-division-of-samsung-cup-2016-przed-1-runda/">World Division of Samsung Cup 2016, przed 1 rundą</a>
-						</li>
-				</ul>
-		</aside>		<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Najnowsze komentarze</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">damię</span> o <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/23/droga-do-petersburga/#comment-220">Droga do Petersburga</a></li><li class="recentcomments"><span class="comment-author-link">drakula</span> o <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/19/world-division-of-samsung-cup-2016-po-3-rundzie/#comment-211">World Division of Samsung Cup 2016, po 3 rundzie</a></li><li class="recentcomments"><span class="comment-author-link">Sad</span> o <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/19/world-division-of-samsung-cup-2016-po-3-rundzie/#comment-206">World Division of Samsung Cup 2016, po 3 rundzie</a></li><li class="recentcomments"><span class="comment-author-link">banan</span> o <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/01/czas-ruszac-w-droge/#comment-189">Czas ruszać w drogę</a></li><li class="recentcomments"><span class="comment-author-link">Paweł Golba</span> o <a href="/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/24/smutne-wiadomosci/#comment-181">Smutne wiadomości</a></li></ul></aside><aside id="categories-3" class="widget widget_categories"><h3 class="widget-title">Kategorie</h3>		<ul>
-	<li class="cat-item cat-item-45"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/category/lekcje/" >Lekcje</a>
-</li>
-	<li class="cat-item cat-item-36"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/category/mecze/" >Mecze</a>
-</li>
-	<li class="cat-item cat-item-53"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/category/nowosci/" >Nowości</a>
-</li>
-	<li class="cat-item cat-item-28"><a href="/web/20160729170050/http://mateuszsurma.pl/pl/category/zadania/" >Zadania</a>
-</li>
-		</ul>
-</aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archiwa</h3>		<ul>
-			<li><a href='/web/20160729170050/http://mateuszsurma.pl/pl/2016/07/'>Lipiec 2016</a></li>
-	<li><a href='/web/20160729170050/http://mateuszsurma.pl/pl/2016/06/'>Czerwiec 2016</a></li>
-	<li><a href='/web/20160729170050/http://mateuszsurma.pl/pl/2016/05/'>Maj 2016</a></li>
-	<li><a href='/web/20160729170050/http://mateuszsurma.pl/pl/2016/04/'>Kwiecień 2016</a></li>
-	<li><a href='/web/20160729170050/http://mateuszsurma.pl/pl/2016/03/'>Marzec 2016</a></li>
-	<li><a href='/web/20160729170050/http://mateuszsurma.pl/pl/2016/02/'>Luty 2016</a></li>
-	<li><a href='/web/20160729170050/http://mateuszsurma.pl/pl/2016/01/'>Styczeń 2016</a></li>
-		</ul>
-		</aside>	</div><!-- #secondary .widget-area -->
-
-					</div><!-- .full-container -->
-	</div><!-- #main .site-main -->
-
-	
-	
-	<footer id="colophon" class="site-footer" role="contentinfo">
-
-			<div id="footer-widgets" class="full-container">
-					</div><!-- #footer-widgets -->
-	
-	
-	<div id="theme-attribution">A <a href="/web/20160729170050/https://siteorigin.com/">SiteOrigin</a> Theme</div>
-</footer><!-- #colophon .site-footer -->
-
-	
-</div><!-- #page-wrapper -->
-
-
-<a href="#" id="scroll-to-top" title="Back To Top"><span class="vantage-icon-arrow-up"></span></a><link rel='stylesheet' id='metaslider-flex-slider-css'  href='/web/20160729170050cs_/http://mateuszsurma.pl/wp-content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css?ver=3.3.7' type='text/css' media='all' property='stylesheet' />
-<link rel='stylesheet' id='metaslider-public-css'  href='/web/20160729170050cs_/http://mateuszsurma.pl/wp-content/plugins/ml-slider/assets/metaslider/public.css?ver=3.3.7' type='text/css' media='all' property='stylesheet' />
-<script type='text/javascript' src='/web/20160729170050js_/http://mateuszsurma.pl/wp-includes/js/wp-embed.min.js?ver=4.5.3'></script>
-<script type='text/javascript' src='/web/20160729170050js_/http://mateuszsurma.pl/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider-min.js?ver=3.3.7'></script>
-
+</header>
+<section id="some_text" class='amazingTextBlock'>
+    <div>
+        <div>
+            <p class="textTitle">AARHUS LEJERBOLIGER</p>
+            <p class="mainText">Expedita qui sint reiciendis inventore eveniet. Omnis at perferendis qui aliquam omnis
+                eos. Aut in qui
+                quaerat
+                cumque quis et tempore dolor. Quia asperiores sint ratione. Nostrum laborum sunt voluptas quia est
+                officia.
+            </p>
+            <p>
+                <button class="btn View_Project Rectangle_7"
+                        onmouseover="this.className='btnhov View_Project Rectangle_7'"
+                        onmouseout="this.className='btn View_Project Rectangle_7'">
+                    View project
+                </button>
+            </p>
+        </div>
+    </div>
+</section>
+<section id="portfolio">
+    <div id="img_container" style="width: 100%;">
+        <ul class="rects">
+            <li><img src="./img/pictures/30-26.png"></li>
+            <li><img src="./img/pictures/30-28.png"></li>
+            <li><img src="./img/pictures/30-30.png"></li>
+            <li><img src="./img/pictures/30-32.png"></li>
+            <li><img src="./img/pictures/30-35.png"></li>
+            <li><img src="./img/pictures/30-37.png"></li>
+        </ul>
+    </div>
+</section>
+<section id="the_title" class="amazingTextBlock">
+    <article style="font-size: 18pt;">Expedita qui sint reiciendis inventore eveniet. Omnis at perferendis qui aliquam
+        omnis
+        eos. Aut in qui quaerat
+        cumque quis et tempore dolor. Quia asperiores sint ratione. Nostrum laborum sunt voluptas quia est officia.
+    </article>
+</section>
+<section id="about" class="clearfix">
+    <img src="img/button-crosses.png">
+    <div id="aboutWrapper">
+        <p>
+            <span class="theName">MOONSPEAK</span><br>
+            Autem qui est aut provident non aut omnis. Totam nostrum id officia dolorem vel quo. Quod quisquam sit qui
+            similique et. <br>
+        </p>
+        <p>
+            <span class="theName">MOONSPEAK</span><br>
+            Autem qui est aut provident non aut omnis. Totam nostrum id officia dolorem vel quo. Quod quisquam sit qui
+            similique et. <br>
+        </p>
+        <p>
+            <span class="theName">MOONSPEAK</span><br>
+            Autem qui est aut provident non aut omnis. Totam nostrum id officia dolorem vel quo. Quod quisquam sit qui
+            similique et.<br>
+        </p>
+    </div>
+</section>
+<section id="articles">
+    <div class="clearfix">
+        <div class="item Columns"><p class="column_title">Excepteur sint occaecat cupidatat non proident</p>
+            <p class="column_body">Autem qui est aut provident non aut omnis. Totam nostrum id officia dolorem vel quo.
+                Quod
+                quisquam sit qui
+                similique et.</p>
+            <a href="#" class="Learn_more">Learn more</a>
+        </div>
+        <div class="item Columns" style="margin-left: 5px; margin-right: 5px;"><p class="column_title">
+            Excepteur sint occaecat cupidatat non proident</p>
+            <p class="column_body">Autem qui est aut provident non aut omnis. Totam nostrum id
+                officia dolorem vel quo. Quod quisquam sit qui
+                similique et.</p>
+            <a href="#" class="Learn_more">Learn more</a>
+        </div>
+        <div class="item Columns"><p class="column_title">Excepteur sint occaecat cupidatat non proident</p>
+            <p class="column_body">Autem qui est aut provident non aut omnis. Totam nostrum id officia dolorem vel quo.
+                Quod
+                quisquam sit qui
+                similique et.</p>
+            <a href="#" class="Learn_more">Learn more</a>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div style="font-size: larger; float: left; width: 50%"><!--TODO: CSS it-->
+        <p>There are many variations of passages
+            of Lorem Ipsum available, but the majority
+            have suffered alteration in some form, by injected
+            humour, or randomised words which don't look
+            even slightly believable.</p>
+        <p><b>Phone number</b><br>
+            +40 770 123 456</p>
+        <p><b>Email</b><br>almaz@bisenbaev.com</p>
+    </div>
+    <div id="map"></div>
+</section>
+<footer>
+    <div><p>
+        <a href="https://twitter.com"> <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="https://facebook.com"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a href="https://instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href="https://youtube.com"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    </p>
+        <p>
+        <span class="Copyright">
+            Copyright 2017
+        </span>
+        </p></div>
+</footer>
 </body>
 </html>
-
-
-
-
-
-<!--
-     FILE ARCHIVED ON 17:00:50 Jul 29, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 16:22:01 Feb 23, 2017.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->

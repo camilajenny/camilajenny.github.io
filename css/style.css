@@ -1,0 +1,168 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+section#some_text > div {
+    height: 400px;
+
+    position: relative;
+}
+
+section#some_text > div > div {
+    line-height: 1em;
+    background-color: #ffffff;
+
+    padding: 5% 10%;
+
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#some_text p {
+    text-align: center;
+}
+
+section#some_text p.textTitle {
+    font-size: 25px;
+}
+
+section#some_text p.mainText {
+    text-align: left !important;
+    display: block;
+}
+
+button {
+    padding: 10px 30px;
+    margin-top: 40px;
+}
+
+button.btnhov {
+    filter: invert(40%);
+}
+
+.btn {
+
+}
+
+.View_Project {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: #222222;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    z-index: 62;
+}
+
+.Rectangle_7 {
+    border: 2px solid #222222;
+    background-color: rgba(41, 10, 89, 0);
+    width: 204px;
+    height: 58px;
+    z-index: 61;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+#img_container {
+    background-color: #020202;
+}
+
+.rects {
+    list-style-type: none;
+    max-height: 1000px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rects li {
+    position: relative;
+    flex: 0 1 33.3%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+section {
+    min-height: 400px;
+}
+
+section#the_title {
+    /*text-align: center;
+    vertical-align: middle;*/
+    position: relative;
+}
+
+/*TODO: use these classes somewhere*/
+.centerContainer {
+    position: relative;
+}
+
+.centeredContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#the_title > article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.amazingTextBlock {
+    background-color: #EFEEE9;
+}
+
+section#contact {
+    background-color: #363636;
+    color: #ffffff;
+}
+
+section#contact > div {
+    padding-left: 15px;
+}
+
+#map {
+    height: 400px;
+    min-width: 500px;
+    float: right;
+    margin-right: 50px
+}
+
+.Copyright {
+    font-size: 20px;
+    font-family: "Roboto";
+    color: #353535;
+    line-height: 1.4;
+    text-align: left;
+    z-index: 5;
+}
+
+footer > div > p:first-child {
+    float: left;
+}
+
+footer > div > p:nth-child(2) {
+    float: right;
+}
+
+footer a {
+    color: #000000;
+}

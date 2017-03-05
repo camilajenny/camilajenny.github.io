@@ -1,0 +1,80 @@
+
+.theName {
+    letter-spacing: 4px;
+}
+
+.Columns {
+    text-align: center;
+}
+
+.column_title {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    z-index: 31;
+}
+
+.column_body {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb(34, 34, 34);
+    line-height: 1.2;
+}
+
+.Learn_more {
+    font-size: 16px;
+    font-family: "Roboto";
+    /*color: rgb(78, 174, 255);
+    text-decoration: underline;*/
+    line-height: 1.2;
+}
+
+.base {
+    background-color: #ffffff;
+    width: 350px;
+    height: 426px;
+}
+
+section#about {
+    /*height: 600px;*/
+    min-height: unset;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+#about > img {
+    margin: auto 15px auto auto;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+
+    opacity: 0.85;
+}
+
+#aboutWrapper {
+    padding-left: 10px;
+    margin: auto 15px;
+}
+
+section#articles {
+    background-color: #EFEEE9;
+    min-height: unset;
+}
+
+section#articles > div {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    width: 20%;
+    float: left;
+    padding: 20px 25px;
+    margin: 35px 30px;
+    background-color: #ffffff;
+}
