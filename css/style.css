@@ -65,17 +65,6 @@ button.btnhov {
     z-index: 61;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-}
-
 #img_container {
     background-color: #020202;
 }
@@ -85,6 +74,8 @@ nav ul li {
     max-height: 1000px;
 
     display: flex;
+    align-items: stretch;
+    align-content: stretch;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -95,6 +86,19 @@ nav ul li {
     overflow: hidden;
     box-sizing: border-box;
     margin: auto;
+
+    color: #ffffff;
+}
+
+.txtOverImg {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+
+    font-size: x-large;
+    text-transform: uppercase;
+
+    display: none;
 }
 
 section {
@@ -135,16 +139,29 @@ section#contact {
     color: #ffffff;
 }
 
-section#contact > div {
+#contactInformation {
     padding-left: 15px;
-}
 
+    font-size: larger;
+    float: left;
+    width: 40%
+}
 #map {
     height: 400px;
-    min-width: 500px;
+    min-width: 50%;
     float: right;
-    margin-right: 50px
+    margin-right: 50px;
 }
+
+@media all and (max-width: 690px) {
+    #map {
+    display: none;
+}
+    #contactInformation {
+        width: 95%;
+    }
+}
+
 
 .Copyright {
     font-size: 20px;

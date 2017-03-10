@@ -5,12 +5,27 @@ header {
 }
 
 .headerSection {
-    font-size: 5pt;
+    font-size: 10px;
+}
+
+.theName {
+    letter-spacing: 4px;
 }
 
 nav > div {
     position: relative;
     top: 40%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav {
@@ -28,7 +43,10 @@ nav {
 nav.smaller {
     height: 30px;
 }
-nav.smaller > div { top: 30%;}
+
+nav.smaller > div {
+    top: 30%;
+}
 
 nav a {
     text-decoration: none;
