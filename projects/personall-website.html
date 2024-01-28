@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Personal website</title>
+    <!-- Styles-->
+    <link href="/assets/css/styles.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="app">
+      <header> 
+        <div class="bg-dark collapse" id="navbarHeader">//.show
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <ul class="list-unstyled">
+                  <li> <a class="text-white" href="https://stackoverflow.com/users/7769052/banan314"> <i class="fa fa-stack-overflow fa-front-symbol"></i><span>StackOverflow account</span></a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                  <li><a class="text-white" href="https://www.linkedin.com/in/kamil-lopuszanski-87035b101/">Connect on LinkedIn</a></li>
+                  <li><a class="text-white" href="https://github.com/banan314/">See portfolio on Github</a></li>
+                  <li><a class="text-white" href="mailto:kamil.lopuszanski@gmail.com">Email me</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+          <div class="container d-flex justify-content-between"><a class="navbar-brand d-flex align-items-center gap-2" href="/index.html">
+              <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-darkreader-inline-stroke style="--darkreader-inline-stroke: currentColor;">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg><strong>Portfolio</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          </div>
+        </div>
+      </header>
+      <main class="jumbotron px-4 py-5 text-center" role="main">
+        <h1>Personal portfolio website</h1>
+        <h2>Project Description</h2>
+        <p>Research project in Probability Calculus.</p>
+        <p> </p>
+        <section class="jumbotron text-center">
+          <h2>Technologies Used</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Pug</li>
+            <li class="list-group-item">SASS</li>
+          </ul>
+        </section>
+        <section class="jumbotron text-center">
+          <h2>Project Links</h2>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="https://github.com/banan314/stochastic-delays">GitHub Repository</a></li>
+          </ul>
+        </section>
+      </main>
+      <footer class="bg-secondary text-light py-3">
+        <div class="container">
+          <p class="float-right"><a class="text-light" href="#">Back to top</a></p>
+          <p>© 2024 Kamil Łopuszański</p>
+          <p><a class="text-light" href="/index.html">Visit the homepage</a></p>
+        </div>
+      </footer>
+    </div>
+    <!-- Scripts-->
+    <script src="/assets/js/scripts.min.js"></script>
+    <!--    Bootstrap core JavaScript-->
+    <!--  ================================================== -->
+    <!--  Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <!--  Production version -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="module" src="/src/js/collapse.js"></script>
+  </body>
+</html>
