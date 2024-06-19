@@ -52,11 +52,29 @@
       </header>
       <main class="jumbotron px-4 py-5 text-center" role="main">
         <div class="row g-3">
-          <div class="col-md-4"><img class="card-img-top img-fluid" alt="Engineer thesis" style="max-height: 400px; width: auto" src="../assets/images/spring-hw.png" data-holder-rendered="true"></div>
+          <div class="col-md-4"><img class="card-img-top img-fluid" alt="Engineer thesis" style="max-height: 400px; width: auto" src="../assets/images/eng-thesis.png" data-holder-rendered="true"></div>
           <div class="text-center col-md-8">
             <h1>Engineer thesis</h1>
             <h2>Project Description</h2>
-            <p>Engineer thesis</p>
+            <p>Title of the thesis was <i>Implementation of a Deterministic Zero-Sum Game</i></p>
+            <p><span>The objective of this project was to develop a zero-sum game application that supports gameplay in three modes: computer vs. computer, computer vs. human, and human vs. human. The author successfully created an original game named "Dollar." The project begins with an analysis of available board games of a similar nature. Following this, the author provides a comprehensive presentation of the game's rules, including the organization of the board and the two-step point calculation method, which is a notable strength. The formal description of the game engine or territory size calculator is particularly commendable. The choice of production technologies used in the project is appropriate and leaves no doubts.</span></p>
+            <p><span>In summary, the reviewed project fully meets the requirements set for engineering projects in the field of computer science.</span></p>
+            <p> <b>Novelty and Innovation: </b><span>The novel elements of this project include the concept and implementation of an original game.</span></p>
+            <p> <b>General Game Playing (GGP) Context</b></p>
+            <p>The General Game Playing (GGP) project is primarily developed at Stanford University. For more information about the project, visit <a href="http://www.ggp.org/">GGP's website</a><span>. This work utilized the GGP-Base package, available on <a>(href="https://github.com/ggp-org/ggp-base") GitHub</a><span>. In the terminology of this package, an agent playing the game is called a "gamer," distinguishing them from regular "players." A description of gamers can be found in source. The author intends to adopt this terminology in this work to avoid confusion with another playing agent, the engine, which they developed themselves.</span></span></p>
+            <p>The GGP project focuses on playing games that have never been seen before. The player must learn to make correct moves based on the goal function without knowing the game's rules. The goal can be calculated for any position that can occur in a game using a state machine running on a server or the player's computer. This state machine only uses a rule sheet. A player can be an agent written in any programming language, but Java is recommended due to support from the GGP-Base library. Such an engine is universal and will play any game equally well because it is independent of the game's rules.</p>
+            <p> <b>Game Play</b></p>
+            <p>The game "Dollar" is played on a 9x9 board by two players, who alternately place pieces (e.g., X and O or stones of different colors). In a single move, a player can place only one piece on the board. A piece can be placed if and only if there is already a friendly piece on an adjacent square and the square is empty. The objective of the game is to score more points than the opponent. Scoring occurs at the end of the game when both players pass because they have no good moves left or there are no legal moves available for both.</p>
+            <p>Points can be scored in two ways:
+              <ol>
+                <li>Having a piece in the opponent's camp (a 4x4 corner area of the board).</li>
+                <li>Capturing territory by surrounding it with one's pieces (similar to the game of Go). One point is awarded for each captured square.</li>
+              </ol>
+            </p>
+            <p>A square is considered captured territory if the opponent cannot reach it after any number of moves, given passive play from the player. Passive play means making passing moves. In the figure, the camps are marked with bold lines.</p>
+            <p>Points scored by one player are subtracted from the other player's score: <i>g = p<sub>0</sub><span>- p</span></i></p>
+            <p>This makes it a zero-sum game because the total gain (g) is always zero: <i>g<sub>0</sub><span>+ g = (p<sub>0</sub><span>- p) + (p - p<sub>0</sub><span>) = 0</span></span></span></i></p>
+            <p>The game is also deterministic, as it involves no random elements. Furthermore, the game possesses the following characteristics: it is finite—there is no infinite sequence of moves; it is discrete—the game can be described as a state machine with positions as states and moves as transitions; and it is a game of perfect information—each player is aware of every element of the position and the moves of the opponent. Therefore, it meets the necessary requirements to be described by the Game Description Language (GDL) rule sheet.</p>
           </div>
         </div>
         <section class="jumbotron text-center">
@@ -64,6 +82,8 @@
           <ul class="list-group">
             <li class="list-group-item">Java</li>
             <li class="list-group-item">JavaFX</li>
+            <li class="list-group-item">TDD, General Game Playing, Game Description Language</li>
+            <li class="list-group-item">Git, multi-threading, concurrency</li>
           </ul>
         </section>
         <section class="jumbotron text-center">

@@ -57,6 +57,7 @@
             <h1>Attendance manager</h1>
             <h2>Project Description</h2>
             <p>Attendance manager for managing activities and users that attend them. There are 2 roles for users: admin and student. Admin can manage the users, and a student can only browse the activities, check in or out of them.</p>
+            <p>The user's password is stored in the database in a hashed and salted form. The BCrypt algorithm is used to convert the password from the plain text to the encrypted one. A user has one or more roles: STUDENT and/or ADMIN, that grant authority to view certain pages. Students page is only visible for administrators and the Activities page is visible for both administrators and students.</p>
           </div>
         </div>
         <section class="jumbotron text-center">
@@ -66,6 +67,7 @@
             <li class="list-group-item">Spring Boot, Spring Data, Spring Security</li>
             <li class="list-group-item">Angular</li>
             <li class="list-group-item">Apache Kafka</li>
+            <li class="list-group-item">PostgreSQL</li>
           </ul>
         </section>
         <section class="jumbotron text-center">
