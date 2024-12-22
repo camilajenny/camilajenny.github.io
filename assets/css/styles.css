@@ -1,3 +1,4 @@
+/* Import base styles */
 html,
 body {
   margin: 1;
@@ -9,6 +10,20 @@ body {
 .fa-front-symbol {
   font-size: 1.5rem;
   padding: 10px;
+}
+
+.mr-2 {
+  margin-right: 1rem;
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+
+/* Import components styles */
+/* Import layouts styles */
+.mr-2 {
+  margin-right: 1rem;
 }
 
 .float-left {
@@ -23,6 +38,7 @@ body {
   float: none !important;
 }
 
+/* Import pages styles */
 .jumbotron-heading {
   padding: 2rem;
 }
@@ -32,6 +48,4 @@ body {
   display: inline-block;
 }
 
-.mr-2 {
-  margin-right: 1rem;
-}
+/* Import partials styles */
