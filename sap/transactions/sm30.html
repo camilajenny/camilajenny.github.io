@@ -74,6 +74,41 @@
       </header>
       <main class="jumbotron px-4 py-5 text-center" role="main">
         <h1>SAP SM30</h1>
+        <div class="row">
+          <div class="col-md-5"><img class="card-img-top img-fluid" alt="" style="max-height: 500px; width: auto" src="../../assets/images/sap/sm30/sm30.png" data-holder-rendered="true"></div>
+          <div class="text-center col-md-7">
+            <div class="mb-2">SM30 is used to MAINTAIN TABLES.</div>
+            <h3 id="what-is-sm30-in-sap">What is <strong>SM30</strong> in SAP?</h3>
+            <p>In SAP, <strong>SM30</strong> is the transaction code used for the <strong>Table Maintenance Generator</strong>. It allows users to maintain (i.e., view, create, update, or delete) entries in custom and standard SAP tables through a user-friendly interface without requiring direct access to the tables using SE16 or SE11.</p>
+          </div>
+          <div class="row justify-content-center text-start mt-4">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <h3 id="key-features-of-sm30">Key Features of SM30:</h3>
+              <ol>
+                <li><strong>Table Maintenance</strong>: SM30 allows you to maintain (add, modify, or delete) records in a table, provided the table has been configured for maintenance. You don’t need to work directly with SQL or SE16 to modify data.</li>
+                <li><strong>View and Edit Data</strong>: It enables users to view or edit table entries interactively. The transaction provides an overview of the data and also allows detailed editing.</li>
+                <li><strong>Search and Filter</strong>: Users can search or filter data based on specific criteria before modifying the table entries.</li>
+                <li><strong>Authorization Control</strong>: Access to SM30 can be restricted by authorizations, allowing only authorized users to maintain certain tables.</li>
+              </ol>
+              <h3 id="use-cases">Use Cases:</h3>
+              <ul>
+                <li><strong>Maintain Custom Configuration Tables</strong>: Developers or system administrators often create custom tables for business processes. SM30 makes it easier to maintain the data in these tables.</li>
+                <li><strong>Update Table Data</strong>: For example, updating a configuration table that stores specific company settings or custom business logic parameters.</li>
+                <li><strong>Modify SAP Standard Tables</strong> (with caution): It can be used to maintain data in certain standard SAP tables that allow changes.</li>
+              </ul>
+              <h3 id="example-workflow">Example Workflow:</h3>
+              <ol>
+                <li>Enter <strong>SM30</strong> in the SAP transaction bar.</li>
+                <li>Input the table name you wish to maintain.</li>
+                <li>The system will show you the contents of the table (if configured for maintenance).</li>
+                <li>From here, you can add, change, or delete entries based on your authorization.</li>
+              </ol>
+              <p>However, keep in mind that <strong>not all tables are editable</strong> through SM30, and tables must be configured with a <strong>table maintenance view</strong> to allow such modifications.</p>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
         <p class="text-purple">WORK IN PROGRESS</p>
       </main>
       <footer class="bg-secondary text-light py-3">
