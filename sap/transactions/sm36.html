@@ -74,6 +74,82 @@
       </header>
       <main class="jumbotron px-4 py-5 text-center" role="main">
         <h1>SAP SM36</h1>
+        <div class="row">
+          <div class="col-md-5"><img class="card-img-top img-fluid" alt="" style="max-height: 500px; width: auto" src="../../assets/images/sap/sm36/sm36.jpg" data-holder-rendered="true"></div>
+          <div class="text-center col-md-7">
+            <div class="mb-2">SM36 is used to SCHEDULE BACKGROUND JOBS.</div>
+            <h3 id="what-is-sm36-in-sap">What is <strong>SM36</strong> in SAP?</h3>
+            <p>The <strong>SM36</strong> transaction in SAP is used to <strong>define and schedule background jobs</strong>. Background jobs are tasks or programs that run in the background, often during off-peak hours, to reduce the load on the system during normal operation.</p>
+            <h3 id="sm36-is-typically-used-for">SM36 is Typically Used For:</h3>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-9">
+                <div class="text-start">
+                  <ul>
+                    <li>Running <strong>long-running reports</strong> or batch jobs that don’t need to be executed in real-time.</li>
+                    <li><strong>Data uploads</strong> or <strong>downloads</strong>.</li>
+                    <li>Running <strong>maintenance tasks</strong> (e.g., database reorganizations) during non-business hours.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center text-start mt-4">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <h3 id="key-functions-of-sm36">Key Functions of SM36:</h3>
+              <ol>
+                <li>
+                  <p><strong>Job Definition</strong>:</p>
+                  <ul>
+                    <li>In SM36, you can create a <strong>background job</strong> by specifying a job name and adding the necessary steps (programs or reports) that need to be executed.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Job Scheduling</strong>:</p>
+                  <ul>
+                    <li>You can schedule when the job should run (e.g., immediately, at a specific date/time, periodically).</li>
+                    <li>You can also define job frequency for recurring jobs, such as daily or weekly.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Job Steps</strong>:</p>
+                  <ul>
+                    <li>Each job consists of one or more steps. Each step represents a program or ABAP report that will be executed.</li>
+                    <li>You can specify the program, variant, or report that the job will execute, as well as parameters for each step.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Priority and Resource Allocation</strong>:</p>
+                  <ul>
+                    <li>You can assign <strong>priority</strong> to jobs and define which system resources (servers or work processes) the job should use.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Event-Based Jobs</strong>:</p>
+                  <ul>
+                    <li>Jobs can also be triggered by specific <strong>events</strong> in the system, rather than being scheduled at specific times.</li>
+                  </ul>
+                </li>
+              </ol>
+              <h3 id="steps-to-create-a-job-in-sm36">Steps to Create a Job in SM36:</h3>
+              <ol>
+                <li>Go to <strong>transaction SM36</strong>.</li>
+                <li>Enter a job name.</li>
+                <li>Define the job class (low, medium, or high priority).</li>
+                <li>Specify the program, variant, or report that will be executed.</li>
+                <li>Set the scheduling options (e.g., start time, periodic execution).</li>
+                <li>Save the job.</li>
+              </ol>
+              <h3 id="related-transaction">Related Transaction:</h3>
+              <ul>
+                <li><strong>SM37</strong>: Used to <strong>monitor</strong> the status of background jobs. Here, you can view job logs, check job progress, and even stop or delete jobs if necessary.</li>
+              </ul>
+              <p>In summary, SM36 allows you to efficiently manage tasks that can be processed in the background, ensuring optimal performance during peak business hours.</p>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
         <p class="text-purple">WORK IN PROGRESS</p>
       </main>
       <footer class="bg-secondary text-light py-3">
